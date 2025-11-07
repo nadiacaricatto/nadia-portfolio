@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!--PADRÃO DE CARACTERES -->
+    <meta charset="UTF-8">
+
+    <!-- LAYOUT MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- META TAGS ESSENCIAIS -->
+    <meta name="author" content= "Nádia Piccinin Caricatto">
+    <meta name="description"
+        content="Portfólio de Nádia Piccinin Caricatto | Dev Full Stack | Specialized in turning code into ideas and solutions that shape the future of digital experiences! 
+        Connect with me: send a message, get to know me and my projects!">
+    <meta name="robots" content="index, follow">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <title>Nádia's Portfolio</title>
+    
+</head>
+
+<body>
+
+    <!-- MENU  -->
+    <header class="flex menu_container">
+        <article class="menu_content">
+            <div id="titulo">
+                <a href="index.html">Portfólio</a>
+            </div>
+
+            <nav>
+                <ul class="flex menu_list">
+                    <li><a href="#hero">Let's Start</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- #HERO -->
+        <section id="hero" class="hero_container">
+
+            <!-- BOAS VINDAS -->
+            <article class="hero_content">
+                <h4>👋 Hi there! I'm Nádia!</h4>
+                <h1>Dev Full Stack</h1>
+                <p>Specialized in turning code into ideas and solutions that shape the future of digital experiences!</p>
+                <div class="hero_buttons">
+                    <a href="#contact" class="botao">Send me a message</a>
+                    <a href="#about" class="botao-outline">Get to know more</a>
+                </div>
+            </article>
+
+            <!-- IMAGEM COM ANIMAÇÃO -->
+            <figure class="hero_image">
+                <img
+                    src="./assets/img/Dev.svg"
+                    alt="Cartoon illustration of a young woman developer with long brown hair and glasses, wearing headphones and coding on a computer with multiple screens at her desk."
+                    class="ilustracao float-animation"
+                >
+            </figure>
+
+        </section>
+
+        <!-- #ABOUT -->
+        <section id="about" class="about_container">
+
+            <!-- FOTO DO PERFIL -->
+            <figure class="about_image">
+                <img
+                    src="./assets/img/Avatar.svg"
+                    alt="Cartoon portrait of a young female programmer with brown hair, glasses, and headphones, crossing her arms and smiling confidently."
+                >
+            </figure>
+
+            <!-- CONTEÚDO DO PERFIL -->
+            <article class="about_content">
+
+                <h2>About Me</h2>
+                <p>I’m a former lawyer who swapped legal codes for programming ones! Now I'm a Full Stack Dev - and Systems Analysis student - who can’t resist a good challenge.</p>
+                <p>I’m into sci-fi, strategy games (thanks to my chess competitor days), and falling down rabbit holes of curious facts. When I’m not coding, I’m probably geeking out over new tech - or hanging with my dogs and my family!</p>
+
+                <div class="about_stats">
+                    <a href="#" target="_blank" class="botao">Access GitHub</a>
+                    <div class="stat-item">
+                        <p class="stat-number">100</p>
+                        <p class="stat-label">Followers</p>
+                    </div>
+                     <div class="stat-item">
+                        <p class="stat-number">50</p>
+                        <p class="stat-label">Repositories</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- #CONTACT -->
+        <section id="contact">
+
+            <!-- REDES SOCIAIS -->
+            <article class="contact_info">
+                <h4>Send me a message</h4>
+                <p>Feel free to get in touch with me!</p>
+                <div class="social_container">
+                    <a href="#" target="_blank" class="social_icon">
+                        <img
+                            src="./assets/img/linkedin.svg"
+                            alt="Linkedin link"
+                        >
+                    </a>
+                    <a href="#" target="_blank" class="social_icon">
+                        <img
+                            src="./assets/img/github.svg"
+                            alt="GitHub link"
+                        >
+                    </a>
+                   
+                    
+                </div>
+            </article>
+
+            <!-- FORMULÁRIO -->
+            <form id="formulário">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Enter your full name">
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Enter your best e-mail">
+                <span id="txtemail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Enter the message subject">
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Write your message here..."></textarea>
+
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Made with ☕ + ❣️ + Curiosity by Nádia Piccinin Caricatto
+    </footer>
+</body>
+
+</html>
