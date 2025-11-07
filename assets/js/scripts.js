@@ -23,7 +23,6 @@ async function getApiGithub(){
 
         let conteudo = `
         
-            <!-- FOTO DO PERFIL -->
             <figure class="about_image">
                 <img
                     src="${perfilJson.avatar_url}"
@@ -31,7 +30,6 @@ async function getApiGithub(){
                 >
             </figure>
 
-            <!-- CONTEÚDO DO PERFIL -->
             <article class="about_content">
 
                 <h2>About Me</h2>
@@ -120,6 +118,3 @@ formulario.addEventListener('submit', function(event) {
 // Chamar a função getAPIGithub()
 
 getApiGithub()
-
-about.innerHTML = conteudo;
-;
