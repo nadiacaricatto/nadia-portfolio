@@ -12,7 +12,7 @@
     <!-- META TAGS ESSENCIAIS -->
     <meta name="author" content= "Nádia Piccinin Caricatto">
     <meta name="description"
-        content="Portfólio de Nádia Piccinin Caricatto | Dev Full Stack | Specialized in turning code into ideas and solutions that shape the future of digital experiences! 
+        content="Nádia Piccinin Caricatto's Portfolio | Dev Full Stack | Specialized in turning code into ideas and solutions that shape the future of digital experiences! 
         Connect with me: send a message, get to know me and my projects!">
     <meta name="robots" content="index, follow">
 
@@ -93,7 +93,7 @@
                 <p>I’m into sci-fi, strategy games (thanks to my chess competitor days), and falling down rabbit holes of curious facts. When I’m not coding, I’m probably geeking out over new tech - or hanging with my dogs and my family!</p>
 
                 <div class="about_stats">
-                    <a href="#" target="_blank" class="botao">Access GitHub</a>
+                    <a href="https://github.com/nadiacaricatto" target="_blank" class="botao">Access GitHub</a>
                     <div class="stat-item">
                         <p class="stat-number">100</p>
                         <p class="stat-label">Followers</p>
@@ -133,14 +133,18 @@
             </article>
 
             <!-- FORMULÁRIO -->
-            <form id="formulário">
+            <form action="https://formsubmit.co/nadia.caricatto@gmail.com" method="POST" id="formulario">
+                
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#">
+                <input type="hidden" name="_captcha" value="false">
+                
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Enter your full name">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Enter your best e-mail">
-                <span id="txtemail"></span>
+                <span id="txtEmail"></span>
 
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Enter the message subject">
@@ -159,6 +163,10 @@
     <footer>
         Made with ☕ + ❣️ + Curiosity by Nádia Piccinin Caricatto - 2025
     </footer>
+
+    <!-- Script JavaScript -->
+    <script src="./assets/js/scripts.js"></script>
+
 </body>
 
 </html>
