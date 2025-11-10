@@ -1,51 +1,44 @@
-/* ============================================
-   RESET BÁSICO
-============================================ */
+:root {
+    --bg-main: #F7F3F0;
+    --white: #FFFFFF;
+    --rose: #F6EAF3;
+    --nude: #FFEBE7;
+    --pale-pink: #E8D5DB;
+    --lilac: #E1D7EC;
+    --soft-blue: #D8E6F3;
+    --mint: #D5EAE3;
+    --gray: #F0EFEF;
+    --gray-medium: #E3E3E3;
+    --gray-strong: #CFCFCF;
+    --highlight: #F2928A;
+    --highlight-pink: #F5A9B8;
+    --font-main: #79443F;    /* Marrom claro, elegante, Pinterest */
+    --font-alt: #736F6F;
+    --footer-bg: #F2D8CD;
+    --footer-font: #79443F;
+    --shadow: 0 8px 24px rgba(50, 30, 80, 0.09);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* ============================================
-   VARIÁVEIS DE COR — ALEGRE E MODERNA
-============================================ */
-:root {
-    --orange-500: var(--coral-400);
-    --orange-700: var(--coral-600);
-    --beige-50:  #fdf9f4;
-    --beige-100: #f5ecdf;
-    --brown-200: #FFB6C1; /* rosa claro */
-    --brown-400: #FF7F50; /* laranja coral */
-    --brown-600: #20B2AA; /* verde-água vibrante */
-    --coral-400: #ff8c7b;
-    --coral-600: #e86a5d;
-    --metal-100: #e3ddd5;
-    --metal-300: #b9b0a6;
-    --white: #ffffff;
-    --black: #1a1a1a;
-    --error: #e63946;
-}
-
-/* ============================================
-   ESTRUTURA GERAL
-============================================ */
 body {
-    background-color: var(--beige-50);
-    color: var(--black);
-    line-height: 1.6;
+    background: linear-gradient(120deg, var(--bg-main), var(--rose), var(--nude));
+    color: var(--font-main);
+    font-size: 1.19rem;        /* Antes era 1rem */
+    font-weight: 500;
 }
 
-/* ============================================
-   MENU
-============================================ */
 .menu_container {
     justify-content: center;
-    padding: 1.2rem 0;
-    background-color: var(--brown-600);
+    padding: 1.7rem 0;         /* Antes era 1.2rem */
+    background-color: var(--highlight);
     color: var(--white);
     position: sticky;
     top: 0;
@@ -56,428 +49,448 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1100px;
-    gap: 1rem;
-}
-
-/* Container que vai agrupar menu + botão de idioma */
-.menu_right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    width: 92%;
+    max-width: 1200px;
+    gap: 1.5rem;
 }
 
 #titulo {
-    margin-left: 1rem;
+    margin-left: 1.2rem;
 }
 
 #titulo a {
-    color: var(--white);
-    font-weight: 700;
-    font-size: 1.4rem;
-    transition: color 0.3s ease;
+    color: var(--font-main);
+    font-weight: 600;
+    font-size: 1.45rem;
     letter-spacing: 0.5px;
 }
 
 #titulo a:hover {
-    color: var(--coral-400);
+    background-color: var(--highlight-pink);
+    color: var(--font-main);
+    border-radius: 8px;
+    padding: 2px 10px;
 }
 
 .menu_list {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2.4rem;
 }
 
 .menu_list a {
-    color: var(--white);
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: var(--font-main);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 8px;
+    padding: 2px 11px;
 }
 
 .menu_list a:hover {
-    color: var(--coral-400);
+    background: var(--highlight-pink);
+    color: var(--font-main);
 }
 
-/* ============================================
-   HERO
-============================================ */
+.language-switch {
+    position: static;
+    font-size: 1.03rem;
+}
+
+.language-switch a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 19px;
+    background-color: var(--highlight);
+    border-radius: 50px;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: all 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 1rem;
+}
+
+.language-switch a:hover {
+    background-color: var(--highlight-pink);
+    color: var(--font-main);
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.19);
+}
+
+/* HERO */
 .hero_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    max-width: 1100px;
-    margin: 4rem auto;
+    width: 92%;
+    max-width: 1200px;
+    margin: 4.5rem auto;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.1rem;
 }
-
 .hero_content {
     flex: 1;
     min-width: 280px;
 }
-
 .hero_content h4 {
-    color: var(--coral-400);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    font-size: 1.3rem;
+    color: var(--highlight-pink);
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    font-size: 1.45rem;
     letter-spacing: 0.5px;
 }
-
 .hero_content h1 {
-    font-size: 3rem;
-    color: var(--brown-600);
-    margin-bottom: 1rem;
-    font-weight: 700;
+    font-size: 3.35rem;
+    color: var(--font-main);
+    margin-bottom: 1.3rem;
+    font-weight: 600;
 }
-
 .hero_content p {
-    color: var(--brown-400);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    color: var(--highlight);
+    margin-bottom: 2.3rem;
+    font-size: 1.35rem;
+    font-weight: 500;
 }
-
 .hero_buttons {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
-
 .hero_image img {
-    max-width: 350px;
+    max-width: 365px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
-/* ============================================
-   BOTÕES
-============================================ */
-.botao {
-    background-color: var(--coral-600);
-    color: var(--white);
-    padding: 0.9rem 1.8rem;
-    border-radius: 10px;
+/* BOTÕES */
+.botao, .botao-outline {
+    font-size: 1.18rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+    padding: 1.12rem 2.2rem; /* maior */
+    border-radius: 18px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    margin: 0.3rem 0;
+    box-shadow: 0 6px 16px rgba(103,72,60,0.09);
+    transition: all 0.25s;
 }
 
+.botao {
+    background-color: var(--highlight-pink);
+    color: var(--white);
+}
 .botao:hover {
-    background-color: var(--coral-400);
-    transform: translateY(-2px);
+    background-color: var(--highlight);
+    color: var(--white);
+    transform: scale(1.04) translateY(-2px);
 }
 
 .botao-outline {
-    border: 2px solid var(--coral-600);
-    color: var(--coral-600);
-    padding: 0.9rem 1.8rem;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+    border: 2px solid var(--highlight-pink);
+    color: var(--highlight-pink);
+    background: transparent;
 }
-
 .botao-outline:hover {
-    background-color: var(--coral-600);
+    background-color: var(--highlight-pink);
     color: var(--white);
+    border-color: var(--highlight);
 }
 
-/* ============================================
-   ABOUT
-============================================ */
+/* ABOUT */
 .about_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1100px;
-    margin: 4rem auto;
+    width: 92%;
+    max-width: 1200px;
+    margin: 4.2rem auto;
     flex-wrap: wrap;
     gap: 2rem;
 }
-
 .about_image img {
-    max-width: 300px;
+    max-width: 310px;
     border-radius: 50%;
-    border: 5px solid var(--brown-200);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    border: 5px solid var(--mint);
+    box-shadow: var(--shadow);
 }
-
 .about_content h2 {
-    color: var(--brown-600);
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
-    font-weight: 700;
+    color: var(--font-main);
+    margin-bottom: 1.3rem;
+    font-size: 2.7rem;
+    font-weight: 600;
 }
-
 .about_content p {
-    color: var(--brown-400);
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
+    color: var(--highlight);
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-
 .about_stats {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.3rem;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
-
 .stats-wrapper {
     display: flex;
-    gap: 1rem;
+    gap: 1.1rem;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .about_stats > .botao {
-    margin-right: 0.6rem;
+    margin-right: 0.8rem;
     flex-shrink: 0;
 }
-
 .stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 140px;
-    padding: 1rem 1.2rem;
-    border-radius: 14px;
-    background: linear-gradient(180deg, var(--beige-100), var(--white));
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    border: 1px solid rgba(0,0,0,0.03);
+    min-width: 155px;
+    padding: 1.2rem 1.4rem;
+    border-radius: 16px;
+    background: linear-gradient(180deg, var(--white), var(--rose));
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-medium);
 }
-
 .stat-number {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--brown-600);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--font-main);
     margin-bottom: 0.2rem;
 }
-
 .stat-label {
-    color: var(--brown-400);
+    color: var(--highlight);
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+/* MOODBOARD / PILULAS VISUAIS */
+.moodboard_container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 4.2rem auto;
+    text-align: center;
+}
+.moodboard_container h2 {
+    color: var(--font-main);
+    margin-bottom: 1.7rem;
+    font-size: 2.4rem;
     font-weight: 600;
-    font-size: 0.95rem;
 }
-
-.stat-item .icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
+.moodboard_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
     justify-content: center;
-    margin-bottom: 0.4rem;
-    background: linear-gradient(90deg, var(--coral-400), var(--coral-600));
-    color: var(--white);
-    font-weight: 700;
+}
+.mood-card {
+    background: linear-gradient(135deg, var(--rose), var(--lilac), var(--mint));
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 2.2rem 1.9rem;
+    min-width: 190px;
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.27s cubic-bezier(.47,1.64,.41,.8), box-shadow 0.27s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.mood-card:hover {
+    transform: scale(1.09) translateY(-5px) rotate(-2deg);
+    box-shadow: 0 14px 32px rgba(240,180,200,0.18);
+}
+.mood-card .emoji {
+    font-size: 2.8rem;
+    margin-bottom: .9rem;
+}
+.mood-card .card-title {
+    color: var(--font-main);
+    font-weight: 600;
+    font-size: 1.27rem;
+}
+.mood-card .card-desc {
+    color: var(--highlight);
+    font-size: 1.05rem;
+    font-weight: 500;
 }
 
-/* ============================================
-   CONTACT
-============================================ */
+/* SLOGAN */
+.slogan_container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 4.2rem auto;
+    text-align: center;
+    background: linear-gradient(100deg, var(--white), var(--mint), var(--lilac));
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 2.7rem 1.7rem;
+    margin-bottom: 2rem;
+}
+.slogan_container h2 {
+    color: var(--font-main);
+    margin-bottom: 1.1rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.slogan_result {
+    margin-top: 1.4rem;
+    color: var(--highlight);
+    font-size: 1.33rem;
+    font-weight: 600;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+/* CONTACT */
 #contact {
-    width: 90%;
-    max-width: 1100px;
+    width: 92%;
+    max-width: 1200px;
     margin: 4rem auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.2rem;
 }
-
 .contact_info h4 {
-    color: var(--coral-600);
+    color: var(--highlight);
     margin-bottom: 0.5rem;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.18rem;
 }
-
 .contact_info p {
-    color: var(--brown-400);
+    color: var(--highlight-pink);
     margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.09rem;
 }
-
 .social_container {
     display: flex;
     gap: 1rem;
 }
-
 .social_icon img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+    width: 44px;
+    height: 44px;
+    transition: transform 0.3s;
 }
-
 .social_icon img:hover {
-    transform: scale(1.1);
+    transform: scale(1.09);
 }
 
-/* ============================================
-   FORMULÁRIO (ATUALIZADO)
-============================================ */
+/* FORMULÁRIO */
 #formulario {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.28rem;
     background-color: var(--white);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2.2rem;
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.09rem;
 }
-
 #formulario:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 32px rgba(242,146,138,0.19);
 }
-
 #formulario label {
-    color: var(--brown-600);
+    color: var(--font-main);
     font-weight: 600;
-    margin-left: 0.3rem;
+    font-size: 1.10rem;
 }
-
 #formulario input,
 #formulario textarea {
-    padding: 1rem;
-    border-radius: 14px;
-    border: 2px solid var(--metal-100);
-    background-color: var(--beige-100);
-    font-size: 1rem;
-    color: var(--black);
-    transition: all 0.3s ease;
+    padding: 1.15rem;
+    border-radius: 16px;
+    border: 2px solid var(--gray-medium);
+    background-color: var(--rose);
+    font-size: 1.08rem;
+    color: var(--font-main);
+    transition: all 0.3s;
+    font-weight: 600;
 }
-
 #formulario input::placeholder,
 #formulario textarea::placeholder {
-    color: var(--metal-300);
-    font-size: 0.95rem;
+    color: var(--gray-strong);
+    font-size: 1.08rem;
+    font-weight: 500;
 }
-
 #formulario input:focus,
 #formulario textarea:focus {
-    border-color: var(--coral-600);
+    border-color: var(--highlight);
     background-color: var(--white);
-    box-shadow: 0 0 8px rgba(232,106,93,0.25);
+    box-shadow: 0 0 8px rgba(242,146,138,0.17);
 }
-
 #formulario textarea {
-    min-height: 140px;
+    min-height: 150px;
     resize: vertical;
 }
-
 #formulario button {
     align-self: flex-start;
-    background: linear-gradient(90deg, var(--coral-600), var(--brown-600));
+    background: linear-gradient(90deg, var(--highlight-pink), var(--highlight));
     color: var(--white);
-    padding: 0.9rem 2rem;
-    border-radius: 14px;
+    padding: 1.08rem 2.4rem;
+    border-radius: 16px;
+    font-size: 1.17rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    margin-top: 0.8rem;
+    box-shadow: 0 6px 16px rgba(103,72,60,0.13);
+    transition: all 0.3s;
 }
-
 #formulario button:hover {
-    background: linear-gradient(90deg, var(--coral-400), var(--brown-400));
-    transform: translateY(-2px);
+    background: linear-gradient(90deg, var(--highlight), var(--rose));
+    transform: scale(1.04) translateY(-1px);
 }
 
-/* ============================================
-   PÁGINA DE SUCESSO
-============================================ */
-.success_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
-}
-
-.success_content {
-    text-align: center;
-    padding: 2rem;
-}
-
-.success_content h1 {
-    color: var(--brown-600);
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.success_content h4 {
-    color: var(--brown-400);
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-}
-
-.success_icon img {
-    max-width: 200px;
-    margin-bottom: 1rem;
-}
-
-/* ============================================
-   FOOTER
-============================================ */
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 1.5rem;
-    font-size: 1rem;
-    color: var(--white);
-    background: linear-gradient(90deg, var(--brown-600), var(--coral-600));
-    font-weight: 500;
+    padding: 2.1rem;
+    font-size: 1.38rem;
+    color: var(--footer-font);
+    background: linear-gradient(90deg, var(--footer-bg), var(--nude));
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 -1px 14px rgba(103,72,60,0.13);
 }
 
-/* ============================================
-   ANIMAÇÃO
-============================================ */
-.float-animation {
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-/* ============================================
-   RESPONSIVIDADE
-============================================ */
+/* RESPONSIVO */
 @media (max-width: 900px) {
-    .hero_container, .about_container, #contact {
+    .hero_container, .about_container, #contact, .moodboard_cards {
         flex-direction: column;
         text-align: center;
     }
-
     .hero_image img, .about_image img {
         margin: 0 auto;
     }
-
     .hero_buttons {
         justify-content: center;
     }
-
     #formulario button {
         align-self: center;
     }
-
-    .about_stats, .stats-wrapper {
+    .about_stats, .stats-wrapper, .moodboard_cards {
         justify-content: center;
-        gap: 0.9rem;
+        gap: 1.15rem;
     }
-
     .stat-item {
-        min-width: 160px;
+        min-width: 170px;
+    }
+    footer {
+        font-size: 1.1rem;
+        padding: 1.7rem;
     }
 }
 
@@ -487,56 +500,27 @@ footer {
         gap: 1rem;
         align-items: center;
     }
-
     .menu_list {
         flex-direction: column;
         gap: 1rem;
     }
-
-    .hero_content h1 {
-        font-size: 2.3rem;
+    .hero_content h1,
+    .moodboard_container h2,
+    .slogan_container h2 {
+        font-size: 1.55rem;
     }
-
     .hero_content h4 {
-        font-size: 1.1rem;
+        font-size: 1.17rem;
     }
-
-    .stats-wrapper {
+    .stats-wrapper, .moodboard_cards {
         flex-direction: column;
         align-items: center;
     }
-
     .stat-item {
-        width: 85%;
+        width: 87%;
     }
-}
-
-/* ============================================
-   BOTÃO DE LINGUAGEM COM EMOJI - PADRÃO CABEÇALHO
-============================================ */
-.language-switch {
-    position: static; /* sai do absolute */
-    font-size: 14px;
-}
-
-.language-switch a {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 6px 14px;
-    background-color: var(--brown-600); /* igual ao menu */
-    border-radius: 50px;
-    font-weight: 600;
-    color: var(--white); /* texto branco igual ao menu */
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: all 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-    border: 1px solid rgba(255,255,255,0.2); /* borda sutil */
-}
-
-.language-switch a:hover {
-    background-color: var(--coral-400); /* hover igual aos links do menu */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    footer {
+        font-size: 1rem;
+        padding: 1.1rem;
+    }
 }

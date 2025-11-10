@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!--PADRÃO DE CARACTERES -->
     <meta charset="UTF-8">
-
-    <!-- LAYOUT MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- META TAGS ESSENCIAIS -->
     <meta name="author" content= "Nádia Piccinin Caricatto">
     <meta name="description"
         content="Nádia Piccinin Caricatto's Portfolio | Dev Full Stack | Specialized in turning code into ideas and solutions that shape the future of digital experiences! 
         Connect with me: send a message, get to know me and my projects!">
     <meta name="robots" content="index, follow">
 
-    <!-- Ligando o CSS ao HTML -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <!-- FAVICON -->
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
 
-    <!-- TÍTULO DA PÁGINA -->
     <title>Nádia's Portfolio</title>
-    
 </head>
-
 <body>
 
     <!-- MENU  -->
@@ -35,21 +23,19 @@
             <div id="titulo">
                 <a href="index.html">Portfolio</a>
             </div>
-
             <nav>
                 <ul class="flex menu_list">
                     <li><a href="#hero">Let's Start</a></li>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#moodboard">MoodBoard</a></li>
+                    <li><a href="#slogan">Slogan Geek</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
-
-            <!-- BOTÃO DE IDIOMA -->
             <div class="language-switch">
                 <a href="index-pt.html">🇧🇷 PT-BR</a> |  
                 <a href="index.html">🇺🇸 EN</a>
             </div>
-
         </article>
     </header>
 
@@ -58,8 +44,6 @@
 
         <!-- #HERO -->
         <section id="hero" class="hero_container">
-
-            <!-- BOAS VINDAS -->
             <article class="hero_content">
                 <h4>👋 Hi there! I'm Nádia!</h4>
                 <h1>Dev Full Stack</h1>
@@ -70,100 +54,69 @@
                 </div>
             </article>
 
-            <!-- IMAGEM COM ANIMAÇÃO -->
+            <!-- IMAGEM (SEM FLUTUAÇÃO) -->
             <figure class="hero_image">
                 <img
                     src="./assets/img/Dev.svg"
                     alt="Cartoon illustration of a young woman developer with long brown hair and glasses, wearing headphones and coding on a computer with multiple screens at her desk."
-                    class="ilustracao float-animation"
+                    class="ilustracao"
                 >
             </figure>
-
         </section>
 
         <!-- #ABOUT -->
         <section id="about" class="about_container">
+            <!-- Carregado via JS com dados do GitHub -->
+        </section>
 
-            <!-- FOTO DO PERFIL -->
-            <figure class="about_image">
-                <img
-                    src="./assets/img/Avatar.svg"
-                    alt="Cartoon portrait of a young female programmer with brown hair, glasses, and headphones, crossing her arms and smiling confidently."
-                >
-            </figure>
+        <!-- #MOODBOARD / PÍLULAS VISUAIS -->
+        <section id="moodboard" class="moodboard_container">
+            <h2>MoodBoard</h2>
+            <div class="moodboard_cards">
+                <!-- Cards gerados pelo JS -->
+            </div>
+        </section>
 
-            <!-- CONTEÚDO DO PERFIL -->
-            <article class="about_content">
-
-                <h2>About Me</h2>
-                <p>I’m a former lawyer who swapped legal codes for programming ones! Now I'm a Full Stack Dev - and Systems Analysis student - who can’t resist a good challenge.</p>
-                <p>I’m into sci-fi, strategy games (thanks to my chess competitor days), and falling down rabbit holes of curious facts. When I’m not coding, I’m probably geeking out over new tech - or hanging with my dogs and my family!</p>
-
-                <div class="about_stats">
-                    <a href="https://github.com/nadiacaricatto" target="_blank" class="botao">Access GitHub</a>
-                    <div class="stat-item">
-                        <p class="stat-number">100</p>
-                        <p class="stat-label">Followers</p>
-                    </div>
-                     <div class="stat-item">
-                        <p class="stat-number">50</p>
-                        <p class="stat-label">Repositories</p>
-                    </div>
-                </div>
-            </article>
-
+        <!-- #SLOGAN GEEK -->
+        <section id="slogan" class="slogan_container">
+            <h2>Gerador de Slogan Geek</h2>
+            <p>Precisa de uma dose de inspiração geek/dev? Clique no botão abaixo!</p>
+            <button class="botao" id="gerarSlogan">Me inspire!</button>
+            <div id="resultadoSlogan" class="slogan_result"></div>
         </section>
 
         <!-- #CONTACT -->
         <section id="contact">
-
-            <!-- REDES SOCIAIS -->
             <article class="contact_info">
                 <h4>Send me a message</h4>
                 <p>Feel free to get in touch with me!</p>
                 <div class="social_container">
                     <a href="https://www.linkedin.com/in/nadiacaricatto/" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/linkedin.svg"
-                            alt="Linkedin link"
-                        >
+                        <img src="./assets/img/linkedin.svg" alt="Linkedin link">
                     </a>
                     <a href="https://github.com/nadiacaricatto" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/github.svg"
-                            alt="GitHub link"
-                        >
+                        <img src="./assets/img/github.svg" alt="GitHub link">
                     </a>
-                   
-                    
                 </div>
             </article>
-
-            <!-- FORMULÁRIO -->
             <form action="https://formsubmit.co/nadia.caricatto@gmail.com" method="POST" id="formulario">
-                
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#">
                 <input type="hidden" name="_captcha" value="false">
                 
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Enter your full name">
                 <span id="txtNome"></span>
-
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Enter your best e-mail">
                 <span id="txtEmail"></span>
-
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Enter the message subject">
                 <span id="txtAssunto"></span>
-
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Write your message here..."></textarea>
-
                 <button class="botao" type="submit">Enviar Mensagem</button>
             </form>
         </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -171,9 +124,6 @@
         Made with ☕ + ❣️ + Curiosity by Nádia Piccinin Caricatto - 2025
     </footer>
 
-    <!-- Script JavaScript -->
     <script src="./assets/js/scripts.js"></script>
-
 </body>
-
 </html>
