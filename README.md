@@ -1,68 +1,63 @@
-<br />
-<div align="center">
-   <img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" />
-   <img src="https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge" />
-   <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Badge" />
-</div>
+# 🌐 Portfólio Pessoal da Nádia! 🦄
 
-Welcome to the repository of my personal portfolio — a space where creativity meets code.
-Built with HTML, CSS, and JavaScript, this project showcases who I am, what I build, and how to get in touch with me.
+> Oie! Que legal que você tá aqui!
+>
+> Esse é um projeto que eu desenvolvi com muito carinho: é uma página bilíngue onde você pode conhecer um pouco mais sobre quem eu sou, o que eu gosto e os projetos que eu desenvolvo!
+>
+> Ah! Quase me esqueço: tem um gerador de slogans geek lá dentro... acessa e me conta se o resultado tem a ver com você. 🤓
+---
 
-<br />
+## 📖 Sobre o Projeto
 
-## 🚀 Tech Stack
+> Site de portfólio pessoal desenvolvido com HTML, CSS e JavaScript puro. Nesse projeto, eu me apresento, te mostro meus projetos e formas de contato.
 
-HTML for the structure
+---
 
-CSS for the style
+## ✨ Funcionalidades
 
-JavaScript for the magic ✨
+- 🇧🇷 Suporte bilíngue (PT-BR / EN)
+- 🎯 Seção sobre mim
+- 🖼️ MoodBoard
+- ⚡ Gerador de slogan geek
+- 📬 Formulário de contato
+- 📱 Interface responsiva
 
-<br />
+---
 
-## 🧩 Running Locally  
+## 🛠️ Tecnologias
 
-<br />
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Wanna explore the project on your machine? Here’s how:
+---
 
-## Requirements
+## 🌐 Deploy
 
-- Visual Studio Code (or another one that you like!)
-- Extension: **Live Server** on VsCode
+Disponível via GitHub Pages (vai clicar, né? 👀):
 
-## Steps
+👉 **[nadiacaricatto.github.io/nadia-portfolio](https://nadiacaricatto.github.io/nadia-portfolio/)**
 
-1. Clone this repo:
+---
+
+## 🚀 Como Rodar Localmente
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+# Clone o repositório
+git clone https://github.com/nadiacaricatto/nadia-portfolio.git
+
+# Entre na pasta
+cd nadia-portfolio
+
+# Abra o index.html no navegador
+# Ou use a extensão Live Server no VS Code
 ```
 
-2. Open it in VS Code:
+---
 
-```bash
-code your-repository
-```
+## 👩‍💻 Autora
 
-3. Open an HTML file (like index.html), right-click, and choose “Open with Live Server”.
+Desenvolvido por **Nádia Caricatto**
 
-- Or just start **Live Server** from the bottom bar in VS Code.
-
-That’s it — the portfolio will launch in your browser, and you’ll see the magic happen in real time.
-
-<br />
-
-## 🌐 Deployment
-
-<br />
-
-This project is live on GitHub Pages!
-Check out the deployed version here:
-
-👉 [Personal Portfolio](https://seudominio.com)
-
-## 💡 Contributing
-
-Got an idea, a suggestion, or just want to say hi?
-Feel free to open a pull request — or drop by to share some feedback. Collaboration always makes code better!
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nadiacaricatto/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nadiacaricatto)
