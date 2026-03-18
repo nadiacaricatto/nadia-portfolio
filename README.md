@@ -4,7 +4,7 @@
 >
 > Esse é um projeto que eu desenvolvi com muito carinho: é uma página bilíngue onde você pode conhecer um pouco mais sobre quem eu sou, o que eu gosto e os projetos que eu desenvolvo!
 >
-> Ah! Quase me esqueço: tem um gerador de slogans geek lá dentro... acessa e me conta se o resultado tem a ver com você. 🤓
+> Ah! Quase me esqueço: tem um gerador de slogans geek lá dentro... acessa e me conta se o resultado tem a ver com você 🤓
 ---
 
 ## 📖 Sobre o Projeto
